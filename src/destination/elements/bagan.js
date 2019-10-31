@@ -13,12 +13,12 @@ export const Content = (props) => {
   )
 }
 export const Image = (props) => {
-  
+   console.log(props)
   const {style}= props
   const userStyle= style === undefined?{}:style
   const defaultStyle = { transition: 'transform 0.3s ease-in-out', maxWidth: '100%' }
   return (
 
-    <img src={require(`../images/${props.images}`)} className="img-fluid" style={{ ...defaultStyle,...userStyle}} />
+    <img src={require(`../images/${props.images}`)} className="img-fluid" style={{ ...defaultStyle,...userStyle}}/>
   )
 }

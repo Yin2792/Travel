@@ -46,22 +46,22 @@ export const ShowLogin = (props) => {
 
                         </ul>
                     </div>
-                    <div class="tab-content" id="nav-tabContent">
+                    <div className="tab-content" id="nav-tabContent">
                         <div style={{ backgroundColor: '#fff', padding: "5px", position: "relative", width: '100%', height: '400px' }} className="tab-pane active justify-content-center" id="nav-signin">
 
                             <form>
 
-                                <div class="form-group px-3">
-                                    <label for="exampleFormControlInput1">User Name</label>
-                                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name" />
+                                <div className="form-group px-3">
+                                    <label htmlFor="exampleFormControlInput1">User Name</label>
+                                    <input type="name" className="form-control"  placeholder="name" />
                                 </div>
-                                <div class="form-group px-3">
-                                    <label for="exampleFormControlInput1">password</label>
-                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" />
+                                <div className="form-group px-3">
+                                    <label htmlFor="exampleFormControlInput1">password</label>
+                                    <input type="password" className="form-control"  placeholder="password" />
                                 </div>
-                                <div class="form-group px-3">
-                                    <label for="exampleFormControlInput1">Confirm password</label>
-                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="confirm password" />
+                                <div className="form-group px-3">
+                                    <label htmlFor="exampleFormControlInput1">Confirm password</label>
+                                    <input type="password" className="form-control"  placeholder="confirm password" />
                                 </div>
 
                                 <div className="d-flex justify-content-center" style={{
@@ -76,25 +76,25 @@ export const ShowLogin = (props) => {
 
                             <form>
 
-                                <div class="form-group px-3">
-                                    <label for="exampleFormControlInput1">User Name</label>
-                                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name" />
+                                <div className="form-group px-3">
+                                    <label htmlFor="exampleFormControlInput1">User Name</label>
+                                    <input type="name" className="form-control"  placeholder="name" />
                                 </div>
-                                <div class="form-group px-3">
-                                    <label for="exampleFormControlInput1">password</label>
-                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" />
+                                <div className="form-group px-3">
+                                    <label htmlFor="exampleFormControlInput1">password</label>
+                                    <input type="password" className="form-control"  placeholder="password" />
                                 </div>
-                                <div class="form-row px-3">
-                                <div class="col-auto my-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2" />
-                                        <label class="form-check-label" for="autoSizingCheck2">
+                                <div className="form-row px-3">
+                                <div className="col-auto my-1">
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" />
+                                        <label className="form-check-label" htmlFor="autoSizingCheck2">
                                             Remember me
                                     </label>
                                     </div>
                                 </div>
                                
-                                    <div class="col-auto my-1">
+                                    <div className="col-auto my-1">
                                         <a href="#" style={{textDecoration:'none', color:HoverColor?'red':'#bbbebf'}} onMouseEnter={()=>HandleEnter()} onMouseLeave={()=>HandleLeave()}>Forget Passord?</a>
                                     </div>
                                 </div>

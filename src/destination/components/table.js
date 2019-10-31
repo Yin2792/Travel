@@ -1,38 +1,38 @@
 import React, { Component } from 'react'
 
-class Table extends Component {
-
-    render() {
+const Table =(props)=>{
+        const {lists} =props
+        
         return (
-
-
+          
+          
             <table className="table" style={{color:'#0f0e0d'}}>
                 <tbody >
                     <tr >
 
                         <td>Country</td>
-                        <td>Myanmar</td>
+                        <td>{lists[0]}</td>
 
                     </tr>
                     <tr >
 
                         <td>Visa</td>
-                        <td>Visa is needed for local citizens but foreginers must need</td>
+                        <td>{lists[1]}</td>
                     </tr>
                     <tr >
 
                         <td>Langauage Spoken</td>
-                        <td>Myanmar</td>
+                        <td>{lists[2]}</td>
                     </tr>
                     <tr >
 
                         <td>Currency Used</td>
-                        <td>Kyats</td>
+                        <td>{lists[3]}</td>
                     </tr>
                     <tr >
 
                         <td>Area(km)</td>
-                        <td>430,000km2</td>
+                        <td>{lists[4]}</td>
                     </tr>
                 </tbody>
             </table>
@@ -40,6 +40,6 @@ class Table extends Component {
 
         )
 
-    }
+
 }
 export default Table
